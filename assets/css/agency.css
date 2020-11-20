@@ -42,6 +42,8 @@ img::-moz-selection { background: transparent; }
 
 #foot img:hover { opacity: 1; }
 
+#consulta_publica_intro #texto_inicial { background-image: url(../img/daflogo.png); background-size: 800px; background-repeat: no-repeat; background-position: center; }
+
 .btn { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-weight: 700; }
 
 .btn-xl { font-size: 18px; padding: 20px 40px; }
