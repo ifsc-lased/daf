@@ -1,0 +1,16 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto_close_issues:
+    runs-on: ubuntu-latest
+    name: Fechar issues
+    steps:
+      - name: Fecha issues abertas depois do prazo
+        uses: ifsc-lased/auto-close-issue-by-date@v1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          closed-issues-comment: "Agradecemos o interesse, contudo o período da consulta pública sobre essa especificação encerrou no dia 13/12/2020.  Sendo assim, essa contribuição não será considerada."
+          expiration-date: "2020-12-13"
+          closed-issues-label: "criada fora do prazo"
