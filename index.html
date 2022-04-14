@@ -44,6 +44,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto"><li class="nav-item"><a class="nav-link js-scroll-trigger" href="#timeline">Projeto DAF</a></li>
 		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#consulta_publica">Consulta Pública</a></li>
+		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#kit_desenvolvimento">Kit de Desenvolvimento</a></li>
 		  
           </li>
         </ul>
@@ -76,8 +77,7 @@
     <div class="row">
         <div class="col-lg-12">
             <ul class="timeline">
-                <li class="timeline-inverted">
-                    
+                <li>
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/img/timeline/law.png" alt="">
                     </div>
@@ -94,7 +94,8 @@
                     </div>
                 </li>
                 
-                <li>
+                <li class="timeline-inverted">
+                    
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/img/timeline/contrato.png" alt="image alt text">
                     </div>
@@ -111,8 +112,7 @@
                     </div>
                 </li>
                 
-                <li class="timeline-inverted">
-                    
+                <li>
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/img/timeline/consulta.png" alt="">
                     </div>
@@ -123,7 +123,25 @@
                             <h4 class="subheading">novembro de 2020</h4>
                         </div>
                         <div class="timeline-body">
-                            <div class="text-muted"><p>Lançamento da <a href="/#consulta_publica"><strong>consulta pública</strong></a> da específicação DAF</p>
+                            <div class="text-muted"><p>Lançamento da <a href="/#consulta_publica"><strong>consulta pública</strong></a> da especificação DAF</p>
+</div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="timeline-inverted">
+                    
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/timeline/jornal.png" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4><p>Portaria SEF Nº 284/2021</p>
+</h4>
+                            <h4 class="subheading">julho de 2021</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="text-muted"><p>Publicação da <a href="https://www.sef.sc.gov.br/arquivos_portal/servicos/136/DAF_Especificacao_de_Requisitos_1.0.0.pdf"><strong>Especificação Técnica de Requisitos - Versão 1.0.0</strong></a></p>
 </div>
                         </div>
                     </div>
@@ -133,17 +151,17 @@
                 <li>
                     
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/timeline/jornal.png"
+                                <img class="rounded-circle img-fluid" src="assets/img/timeline/kit.png"
                                 alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4><p>Portaria SEF Nº 284/2021</p>
+                                    <h4><p>Kit de Desenvolvimento</p>
 </h4>
-                                    <h4 class="subheading">julho de 2021</h4>
+                                    <h4 class="subheading">abril de 2022</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <div class="text-muted"><p>Publicação da <a href="https://www.sef.sc.gov.br/arquivos_portal/servicos/136/DAF_Especificacao_de_Requisitos_1.0.0.pdf"><strong>Especificação Técnica de Requisitos - Versão 1.0.0</strong></a></p>
+                                    <div class="text-muted"><p>Publicação dos <a href="/#kit_desenvolvimento"><strong>Repositórios no GitHub</strong></a> com o kit de desenvolvimento</p>
 </div>
                                 </div>
                             </div>
@@ -179,6 +197,42 @@
     </div>
   </section>
 <!-- End Consulta Pública Passada -->
+<!-- Consulta Pública Passada -->
+  <section class="page-section" id="kit_desenvolvimento">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Kit de Desenvolvimento</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+	  <div class="row">
+		<div class="col-lg-11 mx-auto text-justify">
+		  <div class="large text-muted"><p>O kit de desenvolvimento é um conjunto de ferramentas destinado aos desenvolvedores de Programa Aplicativo Fiscal (PAF) e fabricantes de DAF, como uma alternativa enquanto DAFs não são comercializado. O kit de desenvolvimento é composto por:</p>
+
+<p>– <a href="https://github.com/ifsc-lased/daf-pi"><strong>DAF-pi</strong></a>, uma implementação para simular um DAF em uma Raspberry PI Zero W</p>
+
+<p>– <a href="https://github.com/ifsc-lased/composicao-paf-sef"><strong>Composição Docker</strong></a> contendo:</p>
+
+<ul>
+  <li><strong>SEF</strong>: <em>Web Service simulando os serviços que serão disponibilizados pela Secretária de Estado da Fazendo de Santa Catarina</em></li>
+  <li><strong>SEFAZ Autorizadora</strong>: rotinas para simular autorizações de NFC-e junto a SVRS</li>
+  <li><strong>PAF</strong> <em>programa aplicativo para operar o DAF-pi</em></li>
+</ul>
+
+<p>Ainda são disponibilizados os seguintes artefatos:</p>
+<ul>
+  <li><a href="https://github.com/ifsc-lased/daf-app"><strong>Consulta DAF</strong></a> aplicativo para celulares Android para consultar das informações do DAF, simulando um aplicativo para fiscais do Fisco</li>
+  <li><a href="https://github.com/ifsc-lased/daf-poc"><strong>DAF-poc</strong></a> Implementação do Dispositivo Autorizador Fiscal (DAF) em um microcontrolador seguro (MAX 32552 da Maxim)</li>
+</ul>
+
+<p>O código fonte e as instruções para uso de cada artefato estão disponíveis em seus respectivos repositórios no GitHub, que podem ser acessados pelos links apresentados na lista acima. Atente-se que os códigos disponibilizados consistem em uma prova de conceito (POC) e não um código de referência. Assim, a SEF e o IFSC eximem-se de qualquer responsabilidade, direta ou indireta, por perdas ou danos, comprovadamente ou alegadamente, causados pelos artefatos disponibilizados nesta POC. Caso deseje usar os componentes e softwares aqui disponibilizados, você estará fazendo isto exclusivamente por sua conta e risco.</p>
+</div>
+		</div>
+	  </div>
+    </div>
+  </section>
+<!-- End Consulta Pública Passada -->
 <section class="page-section bg-dark" id="foot">
   <div class="container">
     <div class="row">
@@ -206,7 +260,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-8 text-left">
-          <span class="copyright">Copyright &copy; LaSED 2021 - <span style="font-size: 10px;">Desenvolvido com o CMS de código aberto <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></span></span>
+          <span class="copyright">Copyright &copy; LaSED 2022 - <span style="font-size: 10px;">Desenvolvido com o CMS de código aberto <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></span></span>
         </div>
         <div class="col-md-4 tgext-right">
           <ul class="list-inline quicklinks">
